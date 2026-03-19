@@ -170,9 +170,8 @@ function FAQItem({ q, a }) {
 function StageCard({ number, title, subtitle, description, illustration, accentClass, delay, visible }) {
   return (
     <div
-      className={`relative rounded-2xl border border-slate-700/50 bg-slate-800/40 backdrop-blur-sm p-6 transition-all duration-700 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`relative rounded-2xl border border-slate-700/50 bg-slate-800/40 backdrop-blur-sm p-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Stage number */}
@@ -194,9 +193,8 @@ function StageCard({ number, title, subtitle, description, illustration, accentC
 function TestimonialCard({ name, role, quote, metric, delay, visible }) {
   return (
     <div
-      className={`rounded-2xl border border-slate-700/40 bg-slate-800/30 p-6 transition-all duration-700 ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      }`}
+      className={`rounded-2xl border border-slate-700/40 bg-slate-800/30 p-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="flex items-center gap-1 mb-4">
@@ -239,7 +237,7 @@ function WaitlistModal({ onClose }) {
   async function handleSubmit(e) {
     e.preventDefault();
     if (!canSubmit) return;
-    
+
     setLoading(true);
     setError("");
 
@@ -258,7 +256,7 @@ function WaitlistModal({ onClose }) {
           from_name: "LearnOps Waitlist",
         }),
       });
-      
+
       const result = await response.json();
       if (result.success) {
         setSubmitted(true);
@@ -474,9 +472,8 @@ export default function LearnOpsLanding() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* BEFORE */}
             <div
-              className={`rounded-2xl border p-6 transition-all duration-700 ${
-                probVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              } ${darkMode ? "bg-red-500/5 border-red-500/20" : "bg-red-50 border-red-200"}`}
+              className={`rounded-2xl border p-6 transition-all duration-700 ${probVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                } ${darkMode ? "bg-red-500/5 border-red-500/20" : "bg-red-50 border-red-200"}`}
             >
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-red-500/15 flex items-center justify-center">
@@ -504,9 +501,8 @@ export default function LearnOpsLanding() {
 
             {/* AFTER */}
             <div
-              className={`rounded-2xl border p-6 transition-all duration-700 delay-200 ${
-                probVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              } ${darkMode ? "bg-emerald-500/5 border-emerald-500/20" : "bg-emerald-50 border-emerald-200"}`}
+              className={`rounded-2xl border p-6 transition-all duration-700 delay-200 ${probVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                } ${darkMode ? "bg-emerald-500/5 border-emerald-500/20" : "bg-emerald-50 border-emerald-200"}`}
             >
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-emerald-500/15 flex items-center justify-center">
@@ -681,14 +677,6 @@ export default function LearnOpsLanding() {
           </div>
           <div>
             <FAQItem
-              q="When will my card be charged?"
-              a="Your card will not be charged until LearnOps officially launches. We'll send you an email 7 days before billing begins, giving you full opportunity to cancel if you change your mind."
-            />
-            <FAQItem
-              q="How do I cancel?"
-              a="You can cancel your subscription online in one click from your account dashboard — no phone calls, no email chains, no retention offers. This is guaranteed under the FTC Negative Option Rule."
-            />
-            <FAQItem
               q="Do I need to install anything?"
               a="LearnOps runs in your browser. No extensions, no desktop apps, no plugins. Paste a link or upload a transcript, and the pipeline starts immediately."
             />
@@ -712,9 +700,8 @@ export default function LearnOpsLanding() {
       <section ref={ctaRef} className="py-24 px-5 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-teal-500/5 pointer-events-none" />
         <div
-          className={`max-w-2xl mx-auto text-center relative z-10 transition-all duration-700 ${
-            ctaVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`max-w-2xl mx-auto text-center relative z-10 transition-all duration-700 ${ctaVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <h2 className={`font-display font-bold text-3xl sm:text-4xl ${textH} mb-5`}>
             Stop studying harder.
