@@ -673,7 +673,7 @@ export default function LearnOpsLanding() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-xs font-semibold text-slate-500 tracking-widest uppercase mb-3">FAQ</p>
-            <h2 className={`font-display font-bold text-2xl ${textH}`}>Questions before you commit</h2>
+            <h2 className={`font-display font-bold text-2xl ${textH}`}>Questions before you ask</h2>
           </div>
           <div>
             <FAQItem
