@@ -196,8 +196,8 @@ const STAGES = [
     accentClass: "bg-[#3cddc7]/10", delay: 100, Illustration: IsoVault,
   },
   {
-    number: 3, title: "reFeyn",
-    description: "Socratic dialogue sessions, not flashcards. reFeyn stress-tests your causal understanding — asking why and how, not just what — and adapts each session to where your reasoning actually breaks down.",
+    number: 3, title: "reTink",
+    description: "Socratic dialogue sessions, not flashcards. reTink stress-tests your causal understanding — asking why and how, not just what — and adapts each session to where your reasoning actually breaks down.",
     accentClass: "bg-amber-400/10", delay: 200, Illustration: IsoreFeyn,
   },
   {
@@ -216,7 +216,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Marcus Thorne", role: "CS Undergrad",
-    quote: "reFeyn asks me questions I don't know I can't answer yet. That's the part that actually sticks with my ADHD — it's not drilling facts, it's exposing my blind spots.",
+    quote: "reTink asks me questions I don't know I can't answer yet. That's the part that actually sticks with my ADHD — it's not drilling facts, it's exposing my blind spots.",
     avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuCIFNm7Bvd1i1XVTPM_Bbt1U6dQWBpQWSJCF5RJuMFj5a7t5uKQi7XSRfWnTIuF6BsklvVPYNLhpEt4afhFq6LjRLBgSoeRm79UgaQ4OouHVvRwQ2ERxUKnVq7B66DONrPVawZk2d9BWDlB8HXqyGN69OrEQOu5pOPwe58l3BmZC2s8sOZWQMPN9CbgH_lbBY6F9Vx4zwlxv9UdPyS7uyYMoBvDVOLkM23eCxr8PfYXEfqZFb8J4jnFeD2v8s2u7b-h2c7Ci4gPLVUg",
     delay: 100,
   },
@@ -231,11 +231,11 @@ const TESTIMONIALS = [
 const FAQ_ITEMS = [
   {
     question: "Do I need to install anything?",
-    answer: "tink runs in your browser. No extensions, no desktop apps, no plugins. Paste a link or upload a transcript, and the pipeline starts immediately.",
+    answer: "Tink runs in your browser. No extensions, no desktop apps, no plugins. Paste a link or upload a transcript, and the pipeline starts immediately.",
   },
   {
     question: "Is this just fancy flashcards?",
-    answer: "No. Flashcards drill isolated labels. reFeyn — tink's Socratic dialogue engine — challenges you to explain causal mechanisms: how and why things work, not just what they're called. Every session adapts to where your reasoning actually breaks down, not to a fixed review interval.",
+    answer: "No. Flashcards drill isolated labels. reTink — Tink's Socratic dialogue engine — challenges you to explain causal mechanisms: how and why things work, not just what they're called. Every session adapts to where your reasoning actually breaks down, not to a fixed review interval.",
   },
   {
     question: "What if I don't have ADHD?",
@@ -262,7 +262,7 @@ const CHAOS_ITEMS = [
 
 const FLOW_ITEMS = [
   { title: "Isolated Focus Modes", detail: "One task at a time. Pure content extraction without noise." },
-  { title: "reFeyn: Socratic Active Recall", detail: "Dialogue-based sessions that probe your reasoning, not just your memory." },
+  { title: "reTink: Socratic Active Recall", detail: "Dialogue-based sessions that probe your reasoning, not just your memory." },
   { title: "Visual Scaffolding", detail: "Knowledge is automatically mapped into mental structures." },
 ];
 
@@ -523,7 +523,7 @@ function ReFeynDemo() {
 
       {/* Footer */}
       <div className="px-8 py-4 bg-[#080E1A] text-slate-600 text-[10px] flex justify-between font-mono">
-        <span>tink mini</span>
+        <span>Tink mini</span>
         <span>1 of 1 questions</span>
       </div>
     </div>
@@ -559,8 +559,8 @@ export default function HyFeynLanding() {
           access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
           name: firstName,
           email,
-          subject: "tink Waitlist Sign-up",
-          from_name: "tink Waitlist",
+          subject: "Tink Waitlist Sign-up",
+          from_name: "Tink Waitlist",
         }),
       });
       const result = await res.json();
@@ -579,7 +579,7 @@ export default function HyFeynLanding() {
       {/* ─── NAV ─── */}
       <nav className="fixed top-0 w-full z-50 bg-[#0b1326]/60 backdrop-blur-xl">
         <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-          <div className="text-2xl font-bold tracking-tighter text-[#c4c0ff] font-display">tink</div>
+          <div className="text-2xl font-bold tracking-tighter text-[#c4c0ff] font-display">Tink</div>
           <div className="hidden md:flex items-center space-x-8">
             <a href="#pipeline" className="text-[#dae2fd]/70 font-display font-bold text-lg tracking-tight hover:text-[#dae2fd] transition-all duration-300">Pipeline</a>
             <a href="#results" className="text-[#dae2fd]/70 font-display font-bold text-lg tracking-tight hover:text-[#dae2fd] transition-all duration-300">Results</a>
@@ -647,7 +647,7 @@ export default function HyFeynLanding() {
               </ul>
             </div>
             <div className="p-12 bg-[#222a3d]">
-              <h3 className="font-display text-3xl font-bold mb-8 text-[#3cddc7]">The tink Flow</h3>
+              <h3 className="font-display text-3xl font-bold mb-8 text-[#3cddc7]">The Tink Flow</h3>
               <ul className="space-y-6">
                 {FLOW_ITEMS.map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
@@ -727,7 +727,7 @@ export default function HyFeynLanding() {
                 {iframeVis && (
                   <iframe
                     src="https://jon-devlapaz.github.io/LearnOps-tamagachi/"
-                    title="tink MVP"
+                    title="Tink MVP"
                     className="w-full h-full border-0"
                   />
                 )}
@@ -762,7 +762,7 @@ export default function HyFeynLanding() {
                   Built for ADHD brains — not adapted from neurotypical tools.
                 </h3>
                 <p className="text-sm text-[#c8c4d3] leading-relaxed mb-5">
-                  tink isn't a study app with an "ADHD mode" toggle. The entire pipeline — including the reFeyn Socratic engine — was designed
+                  Tink isn't a study app with an "ADHD mode" toggle. The entire pipeline — including the reTink Socratic engine — was designed
                   around executive function constraints from the ground up. That means sessions that end before you collapse, not after.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -820,7 +820,7 @@ export default function HyFeynLanding() {
                 </div>
                 <h3 className="text-2xl font-display font-bold text-[#dae2fd] mb-2">You're on the list!</h3>
                 <p className="text-[#c8c4d3] text-sm leading-relaxed max-w-sm mx-auto">
-                  We'll notify <strong className="text-[#dae2fd]">{email}</strong> the moment tink is ready for you.
+                  We'll notify <strong className="text-[#dae2fd]">{email}</strong> the moment Tink is ready for you.
                 </p>
               </div>
             ) : (
@@ -874,8 +874,8 @@ export default function HyFeynLanding() {
       <footer className="w-full border-t border-[#dae2fd]/10 bg-[#0b1326]">
         <div className="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 w-full max-w-7xl mx-auto">
           <div className="flex flex-col gap-2">
-            <div className="font-display font-bold text-[#c4c0ff] text-xl">tink</div>
-            <p className="text-sm tracking-wide text-[#dae2fd]/50">© 2026 tink. AI-Augmented Neurocognitive Pipelines.</p>
+            <div className="font-display font-bold text-[#c4c0ff] text-xl">Tink</div>
+            <p className="text-sm tracking-wide text-[#dae2fd]/50">© 2026 Tink. AI-Augmented Neurocognitive Pipelines.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
             <a href="#" className="text-sm tracking-wide text-[#dae2fd]/50 hover:text-[#c4c0ff] underline decoration-[#3cddc7]/30 transition-colors">Privacy Policy</a>
